@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnycgopc15ngu"]
+
+[ext_resource type="PackedScene" uid="uid://dbylqw3i7tx0i" path="res://models/props/block-grass-edge.glb" id="1_j1i4j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_opjhh"]
+
+[node name="block-grass-edge-box-collision" type="Node3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="block-grass-edge2" parent="." instance=ExtResource("1_j1i4j")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_opjhh")
