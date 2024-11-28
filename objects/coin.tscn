@@ -45,7 +45,9 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_wqkpw")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xkafy"]
+albedo_color = Color(0.961627, 0.762919, 0.231384, 1)
 albedo_texture = ExtResource("2_04qt4")
+emission_enabled = true
 rim_enabled = true
 rim = 0.5
 
@@ -69,6 +71,7 @@ point_count = 3
 colors = PackedColorArray(0.996094, 0.910156, 0.351563, 1, 1, 1, 1, 1)
 
 [node name="coin" type="Area3D"]
+transform = Transform3D(0.330358, 0, 0, 0, 0.330358, 0, 0, 0, 0.330358, 0, 0, 0)
 script = ExtResource("2_gaakh")
 
 [node name="Mesh" type="MeshInstance3D" parent="."]
