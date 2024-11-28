@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bbi11g2qry3qk"]
+[gd_scene load_steps=26 format=3 uid="uid://bbi11g2qry3qk"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_sb7ec"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_v676y"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cjuicfarc8f42" path="res://objects/block_grass_large_collision.tscn" id="6_08mep"]
 [ext_resource type="PackedScene" uid="uid://cxea8lmw7cy1l" path="res://objects/player_kill_volume.tscn" id="8_5381o"]
 [ext_resource type="PackedScene" uid="uid://g73m8k0j7lyo" path="res://objects/button.tscn" id="11_to8xs"]
+[ext_resource type="PackedScene" uid="uid://rjh4ifidqrfp" path="res://objects/platform_medium.tscn" id="12_gvjvn"]
 [ext_resource type="PackedScene" uid="uid://dc2fax6ykmbm5" path="res://objects/block_grass_edge_acc_collider.tscn" id="14_wpj3q"]
 [ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://objects/coin.tscn" id="15_qoiof"]
 [ext_resource type="PackedScene" uid="uid://dwvhgrcyestak" path="res://objects/trap_spikes.tscn" id="16_r3uul"]
@@ -441,6 +442,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.58801, 0, 1.28142)
 
 [node name="button" parent="World" instance=ExtResource("11_to8xs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.20571, 0, 7.6997)
+
+[node name="platform-medium" parent="World" instance=ExtResource("12_gvjvn")]
 
 [node name="HUD" type="CanvasLayer" parent="." groups=["HUD"]]
 process_mode = 3
