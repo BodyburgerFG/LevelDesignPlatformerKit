@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://clygdbba1whm0"]
+
+[ext_resource type="PackedScene" uid="uid://cg5s7lmnkbgts" path="res://models/prototyping/models/pipe-section.glb" id="1_sgseo"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_abhbd"]
+height = 1.01295
+radius = 0.150658
+
+[node name="pipe-section2" instance=ExtResource("1_sgseo")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.501098, 0)
+shape = SubResource("CylinderShape3D_abhbd")

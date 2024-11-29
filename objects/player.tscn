@@ -38,6 +38,9 @@ shape = SubResource("CapsuleShape3D_gdq8c")
 
 [node name="Character" parent="." instance=ExtResource("2_nero3")]
 
+[node name="antenna" parent="Character/character/root/torso" index="2"]
+transform = Transform3D(3.18864, 0, 0, 0, 1.33524, 2.98023e-08, 0, -7.45058e-09, 3.26325, 0, 0.315226, -0.00464612)
+
 [node name="ButtonPresserArea3D" type="Area3D" parent="Character"]
 collision_layer = 4
 monitoring = false
