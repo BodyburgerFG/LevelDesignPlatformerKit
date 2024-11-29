@@ -7,7 +7,11 @@ size = Vector3(1, 0.397583, 0.0973969)
 
 [node name="fence-straight2" instance=ExtResource("1_h52tv")]
 
+[node name="fence-straight" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.395719)
+
 [node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.395886)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.199036, 0.399834)
