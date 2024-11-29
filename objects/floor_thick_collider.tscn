@@ -6,6 +6,7 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t58xp"]
 albedo_texture = ExtResource("2_2dal7")
 uv1_offset = Vector3(1.73, -6.98, 0)
+proximity_fade_distance = 5.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5la7q"]
 size = Vector3(1, 0.196991, 1)
