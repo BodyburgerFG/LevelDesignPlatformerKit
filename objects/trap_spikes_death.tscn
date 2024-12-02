@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo12l8oe0680r"]
+
+[ext_resource type="PackedScene" uid="uid://dwvhgrcyestak" path="res://objects/trap_spikes.tscn" id="1_ivjlf"]
+
+[node name="trap-spikes" instance=ExtResource("1_ivjlf")]
+
+[node name="DamageDealerArea3D" parent="." index="2"]
+only_push = false
+
+[editable path="DamageDealerArea3D"]
