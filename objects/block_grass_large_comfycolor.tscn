@@ -6,7 +6,6 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nxw68"]
 albedo_texture = ExtResource("2_gwbkp")
 uv1_offset = Vector3(1, 0, 0)
-distance_fade_mode = 1
 distance_fade_min_distance = 100.0
 distance_fade_max_distance = 50.0
 
