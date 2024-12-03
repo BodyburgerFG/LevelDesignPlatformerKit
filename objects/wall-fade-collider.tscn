@@ -1,14 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://80lxfjqjbxjs"]
+[gd_scene load_steps=6 format=3 uid="uid://80lxfjqjbxjs"]
 
 [ext_resource type="PackedScene" uid="uid://ddyao5skytgvu" path="res://models/prototyping/models/floor-thick.glb" id="1_ne4lg"]
 [ext_resource type="Texture2D" uid="uid://0odt7cvj574e" path="res://models/core_models/Textures/colormap.png" id="2_n1whm"]
+[ext_resource type="PackedScene" uid="uid://dqe83pil81wbx" path="res://objects/dither_obstacle.tscn" id="3_3angb"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qv0sl"]
 albedo_texture = ExtResource("2_n1whm")
 uv1_offset = Vector3(0.69, 0, 0)
-proximity_fade_enabled = true
 proximity_fade_distance = 10.0
-distance_fade_mode = 1
 distance_fade_min_distance = 100.0
 distance_fade_max_distance = 0.0
 
@@ -24,3 +23,5 @@ surface_material_override/0 = SubResource("StandardMaterial3D_qv0sl")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_3ekw3")
+
+[node name="DitherObstacle" parent="." index="2" instance=ExtResource("3_3angb")]
